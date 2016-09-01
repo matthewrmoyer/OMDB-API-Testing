@@ -26,7 +26,8 @@ for(i=0; i<movies.length; i++){
 	//get movie name from array
 	var movieName = movies[i];
 	//create omdb api url using movieName
-	var movieSource = "http://www.omdbapi.com/?t=" + movieName + "&y=&plot=short&r=json";
+	//may have to change https to http
+	var movieSource = "https://www.omdbapi.com/?t=" + movieName + "&y=&plot=short&r=json";
 	
 	//use ajax to get JSON data using movieSource as url
 	$.getJSON(movieSource, function(data){
